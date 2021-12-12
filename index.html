@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Fuel zone the best fuel selling platform</title>
+    <div class="main-menu">
+       
+        <nav class="navbar">  
+            <div class="title"> <h1><span class="line">Fuel</span><span class="zon">Zone</span></h1></div>  
+            <div class="ham" >  
+            <span class="bar1"></span>  
+            <span class="bar2"></span>  
+            <span class="bar3"></span>  
+            </div>  
+            <ul class="nav-sub">  
+             <li class="list-item"><a href="index1.html" class="nav-link">Home</a></li>  
+             <li class="list-item"><a href="#order" class="nav-link">Buy</a></li>  
+             <li class="list-item"><a href="#abt" class="nav-link">About</a></li>  
+            </ul>  
+           </nav>  
+        <button class="btn1">Order Now</button>
+       
+    </div>
+    <hr>
+</head>
+<body>
+   <div data-aos="fade-up" class="content1">
+       <div class="clk">
+           <button>BEST</button><p class="txt1">Buy <span class="col">Whenever</span> you want.</p>
+       </div>
+   </div>
+   <div data-aos="fade-up" class="say">
+       <h1>Order Fuel From Any Were In The City Of Calabar And Get Your Fuel Just At Your Door Step.</h1>
+   </div>
+   <div data-aos="fade-up" class="sec1">
+       <p>A user-centric platform designed for YOU to buy fuel <br> in 
+           various amount by just using your mobile phone. All<br>
+           you have to do is just to go to the buying section <br>
+           and click on the <a href="#">BUY</a> button to proceed.
+        </p>
+   </div>
+   <div data-aos="fade-up" class="two">
+       <button class="bu1">App Store</button>
+       <button class="bu2">Play Store</button>
+   </div>
+   <div data-aos="fade-up" class="new">
+       <img src="spa.png" alt="">
+   </div>
+    <div data-aos="fade-up" id="abt">
+        <h1>About Us</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+         Porro eius labore aut nostrum modi non facere neque? Delectus <br>
+          deleniti eaque non accusamus aliquid quasi in amet officia <br>
+           optio quam dolorum, voluptates deserunt adipisci temporibus, <br>
+            nulla dicta. Consequatur quo quas nostrum, illo architecto <br>
+             neque praesentium harum laudantium fugit molestiae, odio odit?
+    </div>
+    <div data-aos="fade-up" id="order">
+        <h1>Order Now</h1>
+      <button><h1>˅</h1></button>
+    </div>
+    <div data-aos="fade-up" class="list">
+    
+       <button  onclick="checkData()" class="me">Choose a liter</button>
+      <p>liter(s):</p>  <h1 id="lte">0</h1>
+      <p>price:</p>  <h1 id="pii">0</h1>
+      <div class="btns">
+     <div id="ca" onclick="actept()">Acept</div>
+     <div id="cs" onclick="cleari()">Clear</div>
+    </div>
+    </div>
+    <div data-aos="fade-up" class="see">
+    <div class="most">
+        <h1>THE BEST FOR YOU</h1>
+    </div><div class="txtq">
+        <h2>We Are Good At What We Do Best</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br>
+             elit. Libero doloremque deserunt quod at, maiores <br>
+              ipsum vero eius iste blanditiis atque?
+        </p>
+    </div>
+</div>
+</body>
+<div data-aos="fade-up" class="footer">
+    <h1>
+        You Can Reach Us On 
+    </h1>
+    <img src="images.png" alt="">
+</div>
+<script>
+    
+</script>
+<script>
+  
+    var ltr = document.getElementById('lte');
+    var pii = document.getElementById('pii');
+    var inp = document.getElementById('num').value;
+    function checkData(){
+        var pmt = prompt('How many liter(s) do you want? (only numbers please)');
+        sum = pmt*145;
+        ltr.innerHTML = pmt;
+        pii.innerHTML = sum;
+    }
+    function cleari(){
+        ltr.innerHTML = "0";
+        pii.innerHTML = '0';
+    }
+ 
+    const hamburger = document.querySelector(".ham");  
+ const navsub = document.querySelector(".nav-sub");  
+ hamburger.addEventListener('click', () => {  
+  hamburger.classList.toggle("change")  
+  navsub.classList.toggle("nav-change")  
+ });  
+</script>
+<script>
+    AOS.init();
+  </script>
+  <style>
+      
+   
+  #order{
+      text-align: center;
+  } 
+  #order button{
+      height: 4em;
+      width: 5em;
+      border: none;
+      border-radius: 50%;
+      color: aliceblue;
+      background:  rgb(52, 52, 214);
+      
+  }
+  #order button:hover{
+    height: 4em;
+    width: 5em;
+    border: none;
+    border-radius: 50%;
+    color: aliceblue;
+    background:  rgb(95, 95, 233);
+    
+}
+  #order h1{
+      margin-bottom: 10px;
+  }
+   #abt{
+       background: #333;
+       color: aliceblue;
+       font-weight: 700;
+       text-align: center;
+       padding: 40px;
+       margin-top: 6em;
+     height: 300px;
+     
+   }      
+ 
+.title{  
+ cursor:pointer;  
+}  
+/*Properties for Nav-bar*/  
+.navbar{  
+ display:flex;  
+ top:0;  
+ height:10vh;  
+ justify-content:space-between;  
+ align-items:center;   
+ padding:0px 100px;  
+ background:white;  
+ font-weight: 700;
+ color: #666;
+ 
+} 
+.me{
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        height: 2.4em;
+        width: 8.5em;
+        background:  rgb(52, 52, 214);
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 4em;
+        margin-top: 1em;
+    
+} 
+.nav-sub{  
+ display:flex;  
+ justify-content:space-between;  
+}  
+.list-item {  
+ padding:10px;  
+ list-style:none;  
+}  
+.nav-link{  
+ color:inherit;  
+ text-decoration:none;  
+}  
+/*Properties for Hamburger*/  
+.ham{  
+ display:none;  
+ padding:5px;  
+ cursor:pointer;  
+}  
+.bar1,.bar2,.bar3{  
+ display:block;  
+ width:35px;  
+ height:3px;  
+ margin:5px auto;  
+ background-color:#101010;  
+ transition: 0.4s;  
+}  
+.zon{
+   color: #666;
+}
+
+       .two{
+           margin-top: 3em;
+       }
+       .bu1{
+           border-radius: 10px;
+           border: none;
+           height: 2.4em;
+           width: 8.5em;
+           background:  rgb(52, 52, 214);
+           color: white;
+           font-size: 1em;
+           font-weight: 500;
+           margin-left: 4em;
+       }
+       .new{
+           text-align: center;
+           margin-top: 3em;
+       }
+       .new img{
+           
+       }
+       .line{
+         color: rgb(52, 52, 214);  
+       }
+       .bu2{
+           border-radius: 10px;
+           border: rgb(52, 52, 214) 0.5px solid;
+           height: 2.4em;
+           width: 8.5em;
+           color:  rgb(52, 52, 214);
+           background: white;
+           font-size: 1em;
+           font-weight: 500;
+       }
+       .sec1{
+           color: #999;
+           font-weight: 600;
+           font-size: large;
+           margin-left: 4em;
+       }
+       .btns{
+           display: flex;
+       }
+       .sec1 a{
+           color: rgb(52, 52, 214);
+           text-decoration: none;
+       }
+       body{
+           font-family: Arial, Helvetica, sans-serif;
+       }
+       .say{
+          font-size: 4vh;
+          color: #333;
+          text-align: center; 
+       }
+       .clk{
+           margin-top: 6em;
+           display: flex;
+           border: #999 0.2px solid;
+           width: 19em;
+           box-shadow: 0.2px 0.2px 0.4px 0.4px #999;
+           border-radius: 27px;
+           height: 3em;
+           margin-left: 4em;
+       }
+       .col{
+           color: rgb(52, 52, 214);
+       }
+       .clk p{
+           margin-left: 1em;
+           font-weight: 600;
+           color: #666;
+       }
+       .clk button{
+           height: 1.5em;
+           margin-left: 1em;
+           margin-top: 1em;
+           width: 3em;
+           border: none;
+           border-radius: 10px;
+           background: rgb(236, 34, 34);
+           color: white;
+       }
+
+       .main-menu{
+          display: inline-flex;
+          text-align: center;
+          
+       }
+       .btn1{
+           border-radius: 10px;
+           border: none;
+           height: 2.4em;
+           width: 8.5em;
+           background:  rgb(52, 52, 214);
+           color: white;
+           font-size: 1em;
+           font-weight: 500;
+           margin-top: 1em;
+           box-shadow: 0.7px 0.7px 0.7px 0.7px rgb(124, 124, 248);
+           
+       }
+       .main-menu ul{
+
+       }
+       .list{
+          background: white;
+          color: #444;
+          width: 30em;
+          font-weight: 700;
+          height: auto;
+          border: 1px solid  rgb(52, 52, 214);
+          border-radius: 20px;
+          text-align: center;
+
+       }
+       #ca{
+           border-radius: 10px;
+           border: none;
+           height: 2.4em;
+           width: 8.5em;
+           background:  rgb(52, 52, 214);
+           color: white;
+           font-size: 1em;
+           font-weight: 500;
+           margin-left: 4em;
+           text-align: center;
+           cursor: pointer;
+       }
+
+       #cs{
+        border-radius: 10px;
+        border: rgb(52, 52, 214) 0.5px solid;
+        height: 2.4em;
+        width: 8.5em;
+        color:  rgb(52, 52, 214);
+        background: white;
+        font-size: 1em;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+    }
+ .most{
+     background-image: url(gasoline2.png);
+     
+    
+ }
+ .txtq{
+     background: #444;
+     color: aliceblue;
+     text-align: center;
+     padding: 60px;
+ }
+ .see{
+     display: flex;
+     height: 23em;
+     margin-top: 4em;
+     margin-left: 14em;
+ }
+.footer{
+    margin-top: 4em;
+    text-align: center;
+    color: #333;
+}
+.footer img{
+    height: 4em;
+    width: 20em;
+    margin-top: 2em;
+}
+
+
+           
+       @media(max-width: 750px){
+        .footer img{
+            height: 3em;
+            width: 15em;
+        }
+        .txtq{
+            background: #444;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+        }
+        .see{
+            display: flex;
+            height: 23em;
+            margin-top: 4em;
+            margin-left: 0em;
+        }
+        .list{
+            background: white;
+            color: #444;
+            width: 17em;
+            font-weight: 700;
+            height: auto;
+            border: 1px solid  rgb(52, 52, 214);
+            border-radius: 20px;
+  
+         }
+        #abt{
+            background: #333;
+            color: aliceblue;
+            font-weight: 700;
+            text-align: center;
+            padding: 40px;
+            margin-top: 6em;
+            height: 400px;
+          
+        }      
+      
+           .btn1{
+           border-radius: 10px;
+           border: none;
+           height: 2.5em;
+           width: 5.5em;
+           background:  rgb(52, 52, 214);
+           color: white;
+           font-size: 0.9em;
+           font-weight: 500;
+           margin-top: 1em;
+           box-shadow: 0.7px 0.7px 0.7px 0.7px rgb(124, 124, 248);
+           
+       }
+           *{  
+  overflow:hidden;  
+ }  
+.nav-sub{  
+  position:absolute;   
+  top:10vh;  
+  right:0px;  
+  flex-direction:column;  
+  background-color:rgb(0,0,0,0.75);  
+  border-radius:0px 0px 0px 20px;  
+  transition:transform 0.3s ease-in;  
+  transform:translate(100%);  
+ }  
+.nav-change{  
+  transform:translate(0%);  
+ }  
+.ham{  
+  display:block;  
+ }  
+.change .bar1 {  
+ transform: rotate(45deg) translate(8px,3px);  
+}  
+.change .bar2 {  
+ opacity: 0;  
+}  
+.change .bar3 {  
+ transform: rotate(-45deg) translate(8px,-3px);  
+}  
+.navbar{  
+ display:flex;  
+ top:0;  
+ height:10vh;  
+ justify-content:space-between;  
+ align-items:center;   
+ padding:0px 20px;  
+ background:white;  
+ font-weight: 700;
+ color: #666;
+
+ 
+}  
+
+           .new img{
+           height: 2em;
+           width: 12em;
+       }
+           .clk{
+           margin-top: 6em;
+           display: flex;
+           border: #999 0.2px solid;
+           width: 17em;
+           box-shadow: 0.2px 0.2px 0.4px 0.4px #999;
+           border-radius: 27px;
+           height: 3em;
+           margin-left: 0em;
+       }
+           .bu2{
+           border-radius: 10px;
+           border: rgb(52, 52, 214) 0.5px solid;
+           height: 2.1em;
+           width: 6em;
+           color:  rgb(52, 52, 214);
+           background: white;
+           font-size: 1em;
+           font-weight: 400;
+       }
+           .bu1{
+           border-radius: 10px;
+           border: rgb(52, 52, 214) 0.5px solid;
+           height: 2.1em;
+           width: 6em;
+           background:  rgb(52, 52, 214);
+           color: white;
+           font-size: 1em;
+           font-weight: 400;
+           margin-left: 0;
+       }
+           #ca{
+           border-radius: 10px;
+           border: rgb(52, 52, 214) 0.5px solid;
+           height: 2.1em;
+           width: 6em;
+           color:  rgb(52, 52, 214);
+           background: white;
+           font-size: 1em;
+           font-weight: 400;
+       }
+           #cs{
+           border-radius: 10px;
+           border: rgb(52, 52, 214) 0.5px solid;
+           height: 2.1em;
+           width: 6em;
+           background:  rgb(52, 52, 214);
+           color: white;
+           font-size: 1em;
+           font-weight: 400;
+           margin-left: 0;
+       }
+       .say{
+          font-size: 1em;
+          color: #333;
+          text-align: center; 
+       }
+       .sec1{
+           color: #999;
+           font-weight: 600;
+           font-size: large;
+           margin-left: 0;
+       }
+     
+       }
+  
+  </style>
+  nivek@
+</html>
